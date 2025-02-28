@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { Product } from '../../core/models/product';
@@ -6,6 +7,8 @@ import { ProductService } from '../../core/services/product.service';
 
 @Component({
   selector: 'app-product-detail',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
