@@ -10,6 +10,13 @@ This is an Angular application that displays a list of products and allows users
 - Angular routing for navigation between views
 - Standalone component architecture
 
+## Demo
+
+https://github.com/user-attachments/assets/e31d90f8-115c-40e6-9f1c-f7219b99479b
+
+
+
+
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
