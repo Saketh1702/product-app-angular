@@ -13,7 +13,7 @@ This is an Angular application that displays a list of products and allows users
 ## Demo
 
 
-https://github.com/user-attachments/assets/55d5c4c8-7512-42ac-834c-534a7b8516ac
+https://github.com/user-attachments/assets/72e7e193-75ec-444f-890c-450dcbc0637e
 
 
 ## Prerequisites
