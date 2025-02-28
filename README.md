@@ -1,58 +1,77 @@
-# ProductApp
+# Angular Product Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+This is an Angular application that displays a list of products and allows users to view detailed information about each product. The application features a responsive design with clean, modern UI elements.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Product listing page with a grid layout
+- Product detail page with information for each product
+- Responsive design that works across different screen sizes
+- Angular routing for navigation between views
+- Standalone component architecture
 
-```bash
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+- Node.js (version 14.x or higher) and npm (Node Package Manager)
+- Angular CLI (Command Line Interface)
+
+You can check if you have Node.js and npm installed by running these commands in your terminal:
+
+```
+node --version
+```
+Or
+```
+npm --version
+```
+
+If you don't have Angular CLI installed, you can install it globally using npm:
+
+```
+npm install -g @angular/cli
+```
+## How to Run the Application Locally
+
+Clone the Repository
+
+```
+git clone https://github.com/yourusername/angular-product-app.git
+cd product-app-angular
+```
+Install dependencies, Open a terminal in the root directory of the project (where the package.json file is located) and run:
+```
+npm install
+```
+After the installation completes, run:
+```
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+Or alternatively:
+```
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Once the compilation is complete, open your web browser and navigate to:
 
-```bash
-ng generate --help
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
+http://localhost:4200
 ```
+## Application Structure
+The application consists of the following main components:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **ProductCardComponent**: Displays a compact view of a product in the product list
+- **ProductListComponent**: Shows all products in a grid layout
+- **ProductDetailComponent**: Displays detailed information about a specific product
+- **ProductService**: Handles data fetching and management
 
-## Running unit tests
+## Navigation
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- The home page automatically redirects to the products page (/products)
+- Click on the "View Details" button on any product card to navigate to the product detail page (/products/:id)
+- On the product detail page, use the "Back to Products" button to return to the product listing
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
