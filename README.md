@@ -23,48 +23,143 @@ Before running the application, ensure you have the following installed:
 
 - Node.js (version 14.x or higher) and npm (Node Package Manager)
 - Angular CLI (Command Line Interface)
+## Check if Node.js is installed
+First, let's check if you already have Node.js installed on your computer:
 
-You can check if you have Node.js and npm installed by running these commands in your terminal:
+For Windows users:
 
+- Open Command Prompt (search for "cmd" in the Start menu)
+- Type ```node --version``` and press Enter
+- Type ```npm --version``` and press Enter
+
+For Mac users:
+
+- Open Terminal (find it in Applications > Utilities > Terminal)
+- Type ```node --version``` and press Enter
+- Type ```npm --version``` and press Enter
+
+If you see version numbers displayed (like v18.16.0 for Node.js and 9.5.1 for npm), you already have Node.js installed. You can skip to the "Installing Angular CLI" section.
+
+## Install Node.js (if not already installed)
+
+If you don't see version numbers or get an error message, you need to install Node.js:
+For Windows:
+
+- Go to https://nodejs.org/
+- Download the "LTS" (Long Term Support) version
+- Run the downloaded installer
+- Follow the installation wizard, accepting the default settings
+- Make sure the option to "Automatically install the necessary tools" is checked
+- Click "Install" and wait for the installation to complete
+- Restart your computer to ensure Node.js is properly installed
+
+For Mac:
+
+- Go to https://nodejs.org/
+- Download the "LTS" version
+- Run the downloaded installer package
+- Follow the installation wizard
+- Enter your admin password if prompted
+- Restart your computer when installation finishes
+
+## Verify installation:
+
+After restarting your computer, open Command Prompt (Windows) or Terminal (Mac) and type:
 ```
 node --version
-```
-Or
-```
 npm --version
 ```
+You should now see version numbers, confirming Node.js is installed.
 
-If you don't have Angular CLI installed, you can install it globally using npm:
+## Installing Angular CLI
 
+Angular CLI (Command Line Interface) is a tool that helps you create and manage Angular projects.
+
+- Open Command Prompt (Windows) or Terminal (Mac)
+- Type the following command and press Enter:
 ```
 npm install -g @angular/cli
 ```
-## How to Run the Application Locally
+This may take a few minutes to complete. When finished, verify installation by typing:
+```
+ng version
+```
+You should see information about the Angular CLI version
 
-Clone the Repository
+## Getting and Running the Product App
+### 1. Download the repository
 
+#### Option 1: Using Git (if you have Git installed):
+
+- Open Command Prompt (Windows) or Terminal (Mac)
+- Navigate to the folder where you want to store the project
+- Type:
 ```
-git clone https://github.com/yourusername/angular-product-app.git
-cd product-app-angular
+  git clone https://github.com/Saketh1702/product-app-angular.git
 ```
-Install dependencies, Open a terminal in the root directory of the project (where the package.json file is located) and run:
+
+#### Option 2: Download as ZIP:
+
+- Go to https://github.com/Saketh1702/product-app-angular
+- Click the green "Code" button
+- Select "Download ZIP"
+- Extract the ZIP file to a location on your computer
+
+### 2. Install project dependencies
+
+- Open Command Prompt (Windows) or Terminal (Mac)
+- Type in the below command Navigate to the project folder:
 ```
-npm install
+cd path/to/product-app-angular
 ```
-After the installation completes, run:
+(Replace "path/to" with the actual path where you saved the project)
+
+- Install the required dependencies:
+```
+  npm install
+```
+- Wait for the installation to complete (this may take several minutes)
+
+## 3. Run the application
+
+- In the same Command Prompt or Terminal window, still in the project folder, type:
 ```
 ng serve
 ```
-Or alternatively:
+- Wait for the application to compile - you'll see a message saying "Compiled successfully" when it's ready
+- Open your web browser (Chrome, Firefox, Edge, etc.)
+- Enter this address in the browser:
 ```
-npm start
+  http://localhost:4200
 ```
+- You should now see the Product App running in your browser!
 
-Once the compilation is complete, open your web browser and navigate to:
+## 4. Using the application
 
+- The home page automatically displays all available products
+- Click on "View Details" on any product card to see more information about that product
+- Use the "Back to Products" button to return to the product listing
+
+## Troubleshooting
+### If you get an error about port 4200 being in use:
+
+- Try a different port by running:
 ```
-http://localhost:4200
+ng serve --port 4201
 ```
+- Then access the app at "http://localhost:4201"
+
+### If you see compilation errors:
+
+- Make sure you followed all steps correctly
+- Try closing the Command Prompt/Terminal and starting over
+- Ensure you're in the correct project directory when running commands
+
+### If the application doesn't display properly:
+
+- Try using a different browser
+- Clear your browser cache or use incognito/private browsing mode
+
 ## Application Structure
 The application consists of the following main components:
 
