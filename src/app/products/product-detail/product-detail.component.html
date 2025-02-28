@@ -1,1 +1,32 @@
-<p>product-detail works!</p>
+<!-- <div class="product-detail-container">
+    <button (click)="goBack()" class="back-button">
+      ← Back to Products
+    </button>
+    
+    <ng-container *ngIf="product$ | async as product; else loading">
+      <div *ngIf="product; else notFound" class="product-detail">
+        <div class="product-image-container">
+          <img [src]="product.imageUrl" [alt]="product.name" class="product-image">
+        </div>
+        <div class="product-info">
+          <h1>{{ product.name }}</h1>
+          <p class="price">{{ product.price | currency }}</p>
+          <h3>Description</h3>
+          <p class="description">{{ product.description }}</p>
+        </div>
+      </div>
+      
+      <ng-template #notFound>
+        <div class="not-found">
+          <h2>Product Not Found</h2>
+          <p>Sorry, the product you're looking for doesn't exist.</p>
+        </div>
+      </ng-template>
+    </ng-container>
+    
+    <ng-template #loading>
+      <div class="loading-container">
+        <p>Loading product details...</p>
+      </div>
+    </ng-template>
+</div> -->
